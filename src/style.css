@@ -1,0 +1,157 @@
+body {
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+  max-width: 1000px;
+  color: rgb(92, 92, 92);
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 1px rgb(145, 145, 145);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.card--post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(214, 245, 222, 0.692);
+}
+
+.card--post label {
+  margin: 0.3rem;
+}
+
+.card--post input,
+.card--post select {
+  border-radius: 1rem;
+  border: 1px solid grey;
+  padding: 0.4rem 0.6rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card--search {
+  background-color: rgba(214, 230, 245, 0.692);
+}
+
+.card--property {
+  background-color: rgba(245, 221, 214, 0.692);
+  margin-bottom: 1rem;
+}
+
+.property-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.btn {
+  width: 70%;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn--submit {
+  background-color: rgb(76, 145, 76);
+}
+
+.btn--submit:hover {
+  background-color: rgb(62, 117, 62);
+}
+
+.btn--search {
+  background-color: rgb(76, 112, 145);
+}
+
+.btn--search:hover {
+  background-color: rgb(62, 100, 117);
+}
+
+/* Pagination */
+.pagination {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  border: 0 solid rgb(221, 221, 221);
+  border-width: 0 0 0 1px;
+  width: fit-content;
+}
+
+.page-item {
+  display: inline-block;
+  border: 0 solid rgb(221, 221, 221);
+  border-width: 1px 1px 1px 0;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.page-item:last-of-type {
+  border-width: 1px 1px 1px 0;
+  border-left: 0;
+}
+
+.page-item:hover {
+  background-color: rgba(214, 245, 222, 0.692);
+}
+
+.page-item--selected {
+  background-color: rgba(214, 245, 222, 0.692);
+}
+
+/* Property Specs */
+.specs-list {
+  list-style-type: none;
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+}
+
+.specs-item {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-badge {
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 3px 2px rgba(197, 197, 197, 0.651);
+}
+
+.specs-icon {
+  margin-right: 0.3rem;
+}
+
+.good-price {
+  background-color: #59c948;
+}
+.overpriced {
+  background-color: #c97148;
+}
+.fair-price {
+  background-color: #48a3c9;
+}
+
+@media screen and (min-width: 1024px) {
+  .specs-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/**/
+
+.bold {
+  font-weight: 700;
+}
